@@ -14,5 +14,5 @@ import { HeaderComponent } from "./shared/components/header/header.component";
 })
 
 export class AppComponent {
-  title = "Projeto Teste";
+  title = 'dash-app';
 }
