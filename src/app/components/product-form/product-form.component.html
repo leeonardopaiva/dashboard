@@ -1,0 +1,22 @@
+<div class="container-form">
+  <h1 class="nav-title">Home » Catalogo de Produtos » Cadastrar Produto</h1>
+
+  <h1>{{ isEdit ? 'Editar Produto' : 'Cadastrar Produto' }}</h1>
+  <form (ngSubmit)="save()">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input id="name" [(ngModel)]="product.name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="price">Preço</label>
+      <input id="price" type="number" [(ngModel)]="product.price" name="price" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Descrição</label>
+      <textarea id="description" [(ngModel)]="product.description" name="description"></textarea>
+    </div>
+    <button type="submit">{{ isEdit ? 'Atualizar' : 'Cadastrar' }}</button>
+    <button type="button" (click)="router.navigate(['/products'])">Cancelar</button>
+  </form>
+
+</div>

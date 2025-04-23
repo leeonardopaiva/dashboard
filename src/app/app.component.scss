@@ -1,0 +1,16 @@
+aside {
+  float:left;
+  border:0px solid red;
+  width:15%;
+  background-color: black;
+  padding: 0;
+  align-items: center;
+}
+
+
+html {
+  display: flexbox;
+}
+
+
+.flex-container {display: flex;}

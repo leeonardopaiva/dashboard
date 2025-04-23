@@ -1,0 +1,44 @@
+<div class="container-prod">
+  <h1 *ngIf="showButton" class="nav-title">Home » Catalogo de Produtos » Produtos</h1>
+
+  <h1>Listagem de Produtos <a routerLink="/product-form"><img *ngIf="showButton" src="/assets/botaodashboard/adicionarproduto.png" alt="Adicionar Produto" class="btn-add"></a></h1>
+  <div class="search-container">
+    <!-- <input
+      type="text"
+      placeholder="Buscar por nome..."
+      [(ngModel)]="searchTerm"
+      (input)="onSearch(searchTerm)"
+    /> -->
+
+  </div>
+  <table class="products-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of paginatedProducts">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagination" *ngIf="filteredProducts.length > itemsPerPage">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">
+      <span class="material-symbols-outlined">
+      chevron_left
+      </span>
+    </button>
+    <span>Página {{ currentPage }} de {{ totalPages }}</span>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      <span class="material-symbols-outlined">
+      chevron_right
+      </span>
+    </button>
+  </div>
+
+</div>

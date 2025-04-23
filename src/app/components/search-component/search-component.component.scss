@@ -1,0 +1,21 @@
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar .search-container {
+    padding:10px 20px;
+  }
+
+
+}

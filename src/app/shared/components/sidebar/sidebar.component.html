@@ -1,0 +1,44 @@
+
+<nav class="navbar">
+  <div class="nav-header">
+    <a routerLink="/dashboard"><img src="/assets/logo.png" width="150"></a>
+  <hr />
+  <app-search class="side" (search)="onSearch($event)"></app-search>
+  </div>
+
+  <nav class="navigation">
+    <ul class="mainmenu">
+      <li class="m1"><a routerLink=""><span class="material-symbols-outlined">home</span> Dashboard</a></li>
+      <li class="m2"><a routerLink=""><span class="material-symbols-outlined">schema</span> Catálogos</a></li>
+      <li class="m3"><a routerLink=""><span class="material-symbols-outlined">deployed_code</span> Produtos <span class="material-symbols-outlined">chevron_right</span> </a>
+        <ul class="submenu">
+          <li><a routerLink="/product-form"><span class="material-symbols-outlined">chevron_right</span> Cadastro</a></li>
+          <li><a routerLink="/products"> <span class="material-symbols-outlined">chevron_right</span> Listar Produto</a></li>
+        </ul>
+      </li>
+      <li class="m4"><a routerLink=""><span class="material-symbols-outlined">group</span> Operador Estrangeiro</a></li>
+      <li class="m5"><a routerLink=""><span class="material-symbols-outlined">brightness_1</span> Certificado Digital</a></li>
+      <li class="m6"><a routerLink=""><span class="material-symbols-outlined">notifications</span> Notificações <span class="badge">30</span></a></li>
+      <li class="m7"><a routerLink=""><span class="material-symbols-outlined">settings</span> Configurar</a></li>
+    </ul>
+  </nav>
+
+  <div class="navmobile dropdown" style="float:left; background-color: #454545;">
+    <button class="dropbtn"><span class="material-symbols-outlined">menu</span></button>
+    <div class="dropdown-content" style="left:0;">
+          <a routerLink="/dashboard" routerLinkActive="active"> <span class="material-symbols-outlined">home</span> Dashboard</a>
+          <a routerLink="/"><span class="material-symbols-outlined">schema</span> Catálogos</a>
+          <a routerLink="/products"><span class="material-symbols-outlined">deployed_code</span> Produtos</a>
+          <a routerLink="/product-form"><span class="material-symbols-outlined">deployed_code</span>  Cadastro Produto</a>
+          <a routerLink="/"><span class="material-symbols-outlined">group</span> Operador Estrangeiro</a>
+          <a routerLink="/"><span class="material-symbols-outlined">brightness_1</span> Certificado Digital</a>
+          <a routerLink="/"><span class="material-symbols-outlined">notifications</span> Notificações <span class="badge">30</span></a>
+          <a routerLink="/"><span class="material-symbols-outlined">settings</span> Configurar</a>
+    </div>
+  </div>
+
+
+</nav>
+
+
+

@@ -1,0 +1,9 @@
+<div class="search-container">
+  <input
+    type="text"
+    placeholder="Pesquisar..."
+    [(ngModel)]="searchTerm"
+    (input)="onSearch()"
+  />
+  <span onclick="onSearch()"><span class="material-symbols-outlined btn-search">search</span></span>
+</div>

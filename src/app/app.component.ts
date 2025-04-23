@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { SidebarComponent } from "./shared/components/sidebar/sidebar.component";
+import { CardsComponent } from "./components/cards/cards.component";
+import { ProductsComponent } from "./components/products/products.component";
+import { HomeComponent } from "./components/home/home.component";
+import { HeaderComponent } from "./shared/components/header/header.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, RouterModule, HomeComponent, SidebarComponent, HeaderComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'dash-app';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 }
