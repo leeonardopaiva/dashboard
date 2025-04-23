@@ -44,7 +44,7 @@
 
 .notify {
   background-image: url(/assets/icones-dashboard/background.png);
-  background-position: bottom 50px right -80px;
+  background-position: bottom 50px right -100px;
   background-repeat: no-repeat;
   background-size: 60%;
 }
@@ -80,7 +80,7 @@
 }
 
 .item.last h2 {
-  margin: 40px 0 30px 0;
+  margin: 40px 0 40px 0;
   font-size: 75px;
 }
 
@@ -120,16 +120,10 @@
 }
 
 
-/* Cores do Dashboard: */
-a {color: #E4A636;}
-a {color: #F3545F;}
-a {color: #2AF589;}
-a {color: #4E92F9;}
-
-
 .flex-container {
   display: flex;
   padding: 0;
+  width:100%;
 }
 
 .flex-container > div {
@@ -143,9 +137,6 @@ a {color: #4E92F9;}
 
 .flex-container > div .icon {
   float:right;
-}
-
-.flex-container > div h1 {
 }
 
 .item figure {
@@ -169,4 +160,9 @@ a {color: #4E92F9;}
     padding: 0;
     flex-direction: column;
   }
+
+  .main-container{
+    width: 100%;
+}
+
 }

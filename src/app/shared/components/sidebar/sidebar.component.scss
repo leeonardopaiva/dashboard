@@ -69,10 +69,10 @@ aside {
 }
 
 .navbar .badge {
-  border:1px solid white;
+  border: 1px solid white;
   color: white;
-  padding: 4px 4px;
-  height: 15px;
+  padding: 5px 5px;
+  /* height: 15px; */
   text-align: center;
   border-radius: 50%;
   float: right;
@@ -82,11 +82,6 @@ aside {
   vertical-align: middle;
   margin: 7px 0;
 }
-
-
-
-
-
 
 /*submenu*/
 .mainmenu li.m1:hover a{background-color:#2C2C2C; color:#CF89FC; border-left:4px solid #CF89FC; }
@@ -99,7 +94,6 @@ aside {
 .mainmenu li.m7:hover a {background-color:#2C2C2C; color:#40F5DC; border-left:4px solid #40F5DC;}
 
 .mainmenu li.m3:hover .submenu a{ background:black; color:#66E17F; border-left:4px solid black}
-
 
 .navigation {
   width: 100%;
@@ -123,15 +117,12 @@ aside {
   padding: 0;
 }
 
-
 .mainmenu li:hover .submenu {
   display: block;
   max-height: 200px;
   padding: 0;
   color:white;
 }
-
-
 
 .submenu a:hover {
   color:#66E17F;
@@ -144,13 +135,15 @@ aside {
 }
 
 
-
 /*Mobile*/
 .dropdown {
   display: none;
 }
 
 
+.navigation {
+  display: block;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -165,6 +158,9 @@ aside {
     display: none;
   }
 
+  .navigation {
+    display: none;
+  }
 
   .dropbtn {
     color: white;

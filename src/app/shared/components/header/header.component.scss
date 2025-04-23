@@ -1,23 +1,20 @@
 header {
   background-color: #2E7AB6;
   width: 100%;
-  height:110px;
+  height:auto;
   display: flex;
-  justify-content: space-between;
 }
+
 
 header p {
   margin:40px 20px;
+  font-size: 16px;
 }
 
 header img {
   margin: 30px 20px;
 }
 
-header .grid-6 {
-  width: 50%;
-  float:left;
-}
 
 .menu-top {
   margin: 0;
@@ -49,9 +46,23 @@ header .grid-6 {
 }
 
 
-.minimenu ul li {
+.minimenu  {
+  float:right;
   list-style: none;
-  display: inline-flex
+  display: inline-flex;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+
+.minimenu span , .minimenu p{
+ margin: 50px 5px 0 5px;
+}
+
+
+.minimenu .material-symbols-outlined {
+  font-size: 36px;
+
+  color:#225A9A;
 }
 
 
@@ -61,6 +72,11 @@ header .grid-6 {
 
   header {
     justify-content: center;
+    text-align: center;
+  }
+
+  header div:last-child {
+    display: none;
   }
 
   .menu-top {display: none;}
