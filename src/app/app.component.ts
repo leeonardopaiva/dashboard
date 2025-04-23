@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SidebarComponent } from "./shared/components/sidebar/sidebar.component";
-import { CardsComponent } from "./components/cards/cards.component";
-import { ProductsComponent } from "./components/products/products.component";
 import { HomeComponent } from "./components/home/home.component";
 import { HeaderComponent } from "./shared/components/header/header.component";
 
@@ -16,7 +14,5 @@ import { HeaderComponent } from "./shared/components/header/header.component";
 })
 
 export class AppComponent {
-  title(title: any) {
-    throw new Error('Method not implemented.');
-  }
+  title = "Projeto Teste";
 }
