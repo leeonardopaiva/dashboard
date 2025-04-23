@@ -84,17 +84,21 @@ aside {
 }
 
 
+
+
+
+
 /*submenu*/
-.mainmenu li.m1:hover a {background-color:#2C2C2C; color:#CF89FC; border-left:4px solid #CF89FC; }
+.mainmenu li.m1:hover a{background-color:#2C2C2C; color:#CF89FC; border-left:4px solid #CF89FC; }
 .mainmenu li.m2:hover a{background-color:#2C2C2C; color:#E4A636; border-left:4px solid #E4A636;}
-.mainmenu li.m3:hover a{background-color:#2C2C2C; color:#2AF589; border-left:4px solid #2AF589;}
+.mainmenu li.m3:hover a{background-color:#2C2C2C; color:#66E17F; border-left:4px solid #66E17F;}
 .mainmenu li.m4:hover a{background-color:#2C2C2C; color:#4E92F9; border-left:4px solid #4E92F9;}
 .mainmenu li.m5:hover a{background-color:#2C2C2C; color:#F73138; border-left:4px solid #F73138;}
 .mainmenu li.m6:hover a{background-color:#2C2C2C; color:#F1D000; border-left:4px solid #F1D000;}
 .mainmenu li.m6:hover a .badge{background-color:#F1D000; color:#2C2C2C; border-left:4px solid #F1D000;}
-.mainmenu li.m7:hover a {background-color:#2C2C2C; color:#3EE3CD; border-left:4px solid #3EE3CD;}
+.mainmenu li.m7:hover a {background-color:#2C2C2C; color:#40F5DC; border-left:4px solid #40F5DC;}
 
-.mainmenu li.m3:hover .submenu a{ background:black; color:#2AF589; border-left:4px solid black}
+.mainmenu li.m3:hover .submenu a{ background:black; color:#66E17F; border-left:4px solid black}
 
 
 .navigation {
@@ -114,8 +118,6 @@ aside {
   padding:5px 10px;
 }
 
-.mainmenu a:hover {
-}
 
 .mainmenu li {
   padding: 0;
@@ -132,7 +134,7 @@ aside {
 
 
 .submenu a:hover {
-  color:#2AF589;
+  color:#66E17F;
 }
 
 .submenu {
