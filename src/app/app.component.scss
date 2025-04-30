@@ -1,16 +1,17 @@
+/* @use 'styles/_variable.scss' as *; */
+@use './styles/variables.scss' as *;
+
 aside {
   float:left;
-  border:0px solid red;
   width:15%;
-  background-color: black;
   padding: 0;
   align-items: center;
 }
 
 
-html {
-  display: flexbox;
+
+
+html body {
+  outline:2px solid blue;
+  background: yellow;
 }
-
-
-.flex-container {display: flex;}

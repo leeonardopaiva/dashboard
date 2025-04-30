@@ -1,3 +1,4 @@
+@use '../../../app/styles/variables.scss' as *;
 
 .main-container {
   width: 80%;
@@ -7,11 +8,9 @@
   border:0px solid pink;
 }
 
-
 a.btn-add {
   display: none;
 }
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

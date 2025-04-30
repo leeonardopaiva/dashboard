@@ -1,15 +1,24 @@
+@use '../../../app/styles/variables.scss' as *;
+
 .search-container {
   margin-bottom: 20px;
 }
 
 .search-container input {
-  padding: 8px;
-  width: 300px;
+  padding: 8px 0;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 50px;
   font-size: 16px;
+  text-indent: 20px;
 }
 
+.search-container .btn-search {
+  color: $white;
+  position: absolute;
+  margin: -50px 0 0 80px;
+  float: right;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

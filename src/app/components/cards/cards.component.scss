@@ -1,15 +1,15 @@
+@use '../../../app/styles/variables.scss' as *;
+
 .container {
   padding: 2rem;
   text-align: center;
 }
-
 
 .item {
   width:100%;
   display: flex;
   align-items: baseline;
 }
-
 
 .container {
   padding: 2rem;
@@ -38,24 +38,23 @@
 .item div:last-child span {
   font-size: 46px;
   font-weight: bold;
-  background-image: url(/public/assets/icones-dashboard/background.png);
 }
 
 
 .notify {
-  background-image: url(/assets/icones-dashboard/background.png);
+  background-image: url(../../assets/icones-dashboard/background.png);
   background-position: bottom 50px right -100px;
   background-repeat: no-repeat;
   background-size: 60%;
 }
 
 .item {
-  border-bottom:1px dashed white;
+  border-bottom:1px dashed $white;
   width:100%;
   display: flex;
   align-items:center;
   padding: 20px 0;
-  color:white;
+  color:$white;
 }
 
 .item:last-child {
@@ -65,7 +64,7 @@
     border-bottom: 0;
     font-size: 36px;
     width: 100%;
-    color: #2AF589;
+    color: $item-green;
     flex-direction: column;
     text-align: center;
     line-height: 0;
@@ -74,7 +73,7 @@
 
 .item.last small {
   font-size: 12px;
-  color: white;
+  color: $white;
   margin: 40px 0 0 0;
   line-height: normal;
 }
@@ -89,34 +88,38 @@
   border-bottom: 0;
   font-size: 18px;
   font-weight: 100;
-  color: #2AF589;
+  color: $item-green;
+}
+
+.item{
+  color: $white;
 }
 
 .item.last{
-  color: #2AF589;
+  color: $item-green;
 }
 
 .item.last:hover h2{
-  color: #2AF589;
+  color: $item-green;
 }
 
 .item:nth-of-type(1):hover{
-  color:#E4A636;
+  color:$item-yellow;
 }
 
 .item:nth-of-type(2){
-  color:#F3545F;
+  color:$item-red;
 }
 .item:nth-of-type(2):hover img{
-  color:#F3545F;
+  color:$item-red;
 }
 
 .item:nth-of-type(3):hover{
-  color:#2AF589;
+  color:$item-green;
 }
 
 .item:nth-of-type(4):hover{
-  color:#4E92F9;
+  color:$item-blue;
 }
 
 
@@ -147,10 +150,10 @@
   background-repeat: no-repeat;
 }
 
-.fig1 {background:url("/assets/icones-dashboard/quantidade.png");}
-.fig2 {background:url("/assets/icones-dashboard/pendentes.png");}
-.fig3 {background:url("/assets/icones-dashboard/validados.png");}
-.fig4 {background:url("/assets/icones-dashboard/transmitidos.png");}
+.fig1 {background:url(../../assets/icones-dashboard/quantidade.png);}
+.fig2 {background:url(../../assets/icones-dashboard/pendentes.png);}
+.fig3 {background:url(../../assets/icones-dashboard/validados.png);}
+.fig4 {background:url(../../assets/icones-dashboard/transmitidos.png);}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -161,8 +164,15 @@
     flex-direction: column;
   }
 
+  .flex-container > div {
+    width: auto;
+  }
+
   .main-container{
     width: 100%;
 }
 
 }
+
+
+

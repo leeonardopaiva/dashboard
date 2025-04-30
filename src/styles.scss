@@ -1,20 +1,46 @@
+@use './app/styles/variables.scss' as *;
 
-*, *:after, *:before {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+
 }
+
+ html {
+/*   border:1px solid red; */
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: $bg-main;
+}
+
+p, ul, li, a, h1, small, strong{
+  font-family:$font-face;
+}
+
+html body {
+  font-family:$font-face;
+}
+
+.navbar hr {
+  border:0;
+  border-bottom: 1px solid $dark-gray;
+}
+
+
  [class*='grid-'] {
  float: left;
  padding: 10px;
  width:100%;
 }
+
 .clear-grid{
 clear:both;
 float:inherit;
 }
+
 .container {
 	margin:0%;
 	width: 100%;
@@ -29,8 +55,6 @@ float:inherit;
 	padding:0;
 	width:auto;
 }
-
-
 
 .grid-m-12 {
 	width: 100%;
@@ -68,7 +92,6 @@ float:inherit;
 .grid-m-1 {
 	width: 8.33%;
 }
-
 
 @media (min-width: 720px) {
 
@@ -144,10 +167,8 @@ width: 16.66666%;
 }
 .grid-t-1 {
 width: 8.33%;
+  }
 }
-
-}
-
 
 @media only screen and (min-width: 1024px) {
 
@@ -247,123 +268,15 @@ img.scale, img.responsive {
 
 
 /*font-face*/
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #313131;
-}
 
 h1, p {
-  color:white;
+  color:$white;
 }
 
 h1 {
@@ -393,15 +306,15 @@ aside .search-container input {
   margin: 10px 0 30px 0;
   text-indent: 20px;
   width: 100%;
-  border: 0px solid #ddd;
+  border: 0px solid $gray;
   border-radius: 50px;
   font-size: 16px;
-  background-color: #454545;
-  color:white;
+  background-color: $dark-gray;
+  color:$white;
 }
 
 aside span.btn {
-  color: white;
+  color:$white;
   margin: 15px 0 0 -35px;
   position: absolute;
   z-index: 10;
@@ -421,24 +334,24 @@ aside span.btn {
 .product-table {
   width: 100%;
   border-collapse: collapse;
-  color:black;
+  color:$black;
 
 }
 .product-table th, .product-table td {
   padding: 8px;
   text-align: left;
-  color:black;
+  color:$black;
 }
 .product-table th {
-  background-color: #454545;
-  color:black;
+  background-color:$dark-gray;
+  color:$black;
 }
 .edit-btn {
-  color: #007bff;
+  color: $blue;
   text-decoration: none;
 }
 .edit-btn:hover {
-  color: #0056b3;
+  color:$dark-blue;
 }
 
 .products-table th:first-child {
@@ -460,23 +373,28 @@ aside span.btn {
   font-size: 13px;
   text-indent: 20px;
   margin: 20px 0;
-  color:white;
+  color:$white;
 }
 
 .search-container .btn-search {
-  color:white;
+  color:$white;
   position: absolute;
   margin: 25px 0 0 -35px;
 }
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .navbar {
     width: auto;
     padding: 5px 20px;
+    background: red;
   }
 
   .search-container {
     padding:10px 20px;
   }
+
+  .flex-container {width: auto;}
 }

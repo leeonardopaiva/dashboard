@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
     placeholder="Buscar produtos..."
   />
 `, */
-  styleUrls: ['./search-component.component.css']
+  styleUrls: ['./search-component.component.scss']
 })
 export class SearchComponent {
   searchTerm: string = '';
